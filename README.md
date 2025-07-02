@@ -60,10 +60,11 @@ el problema con los sistemas del SAT es que ellos utilizan la codificacion `utf1
 
 en esos casos es recomendable usar el script `unsopportablePassword.py` para escribir en un archivo la contraseña en el formato de codificacion original con el cual se guardo o se creo la contraseña de cifrado (vamos a palabras simples solo escribimos en un archivo los bits ordenados de forma correcta de nuestra contraseña que el sistema del sat recordo) 
 
-despues de eso es solo necesario pasar este archivo al script o programa `PasswordChanger.py` de la siguiente forma:
+despues de eso es solo necesario pasar este archivo al script o programa `crtmk2.sh` de la siguiente forma:
 
 ```bash
-PasswordChanger.py --password-file=password.txt
+unsopportablePassword.py --fileout 'out.txt'
+./crtmk2.sh  
 ```
 y bingo el script se encargara de cambiar la contraseña.
 
